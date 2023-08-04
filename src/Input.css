@@ -1,0 +1,44 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: royalblue;
+}
+
+.personal-info {
+    width: 30%;
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin: 2em;
+}
+
+.personal-info > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: white;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75em;
+    color: gray;
+    margin: 2px;
+}
+
+input {
+    margin: 2px;
+    border: 2px gray solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+
+

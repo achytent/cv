@@ -10,15 +10,18 @@ body {
     background: royalblue;
 }
 
-.personal-info {
-    width: 30%;
+.personal-info,
+.education,
+.practical-experience {
     background-color: white;
     padding: 2em;
     border-radius: 1em;
     margin: 2em;
 }
 
-.personal-info > form {
+.personal-info > form,
+.education > form,
+.practical-experience > form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -38,6 +41,10 @@ input {
     border: 2px gray solid;
     border-radius: 0.5em;
     padding: 0.5em;
+}
+
+label[for="responsibilities"] {
+    grid-column: span 2;
 }
 
 

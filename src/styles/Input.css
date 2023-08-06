@@ -48,7 +48,8 @@ input {
     align-content: center;
 }
 
-label[for="responsibilities"] {
+label[for="responsibilities"],
+label[for="responsibilities2"]{
     grid-column: span 2;
 }
 

@@ -10,7 +10,8 @@ export default function Output(props) {
                 <img
                     alt="not found"
                     width={"250px"}
-                    src={URL.createObjectURL(selectedImage)}
+                    src={selectedImage ? URL.createObjectURL(selectedImage) : "#"}
+
                 />
 
                 <div>{personalInfo.firstName}</div>

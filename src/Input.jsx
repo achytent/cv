@@ -30,11 +30,8 @@ export default function Input(props) {
                     </label>
                     <input
                         type="file"
-                        className="profile-picture"
-                        onChange={(event) => {
-                            console.log(event.target.files[0])
-                            setSelectedImage(event.target.files[0])
-                        }}
+                        className="profile-picture-input"
+                        onChange={(event) => setSelectedImage(event.target.files[0]) }
                     />
 
                 </form>
@@ -52,6 +49,21 @@ export default function Input(props) {
                     </label>
                     <label htmlFor="studyDate">
                         <input type="date" name="studyDate" id="studyDate" onChange={handleEducationChange}/>
+                        Date Of Study
+                    </label>
+                </form>
+                <hr />
+                <form>
+                    <label htmlFor="schoolName2">
+                        <input type="text" name="schoolName2" id="schoolName2" onChange={handleEducationChange}/>
+                        School Name
+                    </label>
+                    <label htmlFor="studyTitle2">
+                        <input type="text" name="studyTitle2" id="studyTitle2" onChange={handleEducationChange}/>
+                        Title Of Study
+                    </label>
+                    <label htmlFor="studyDate2">
+                        <input type="date" name="studyDate2" id="studyDate2" onChange={handleEducationChange}/>
                         Date Of Study
                     </label>
                 </form>
@@ -82,24 +94,24 @@ export default function Input(props) {
                 </form>
                 <hr/>
                 <form>
-                    <label htmlFor="companyName">
-                        <input type="text" name="companyName2" id="companyName" onChange={handleExperienceChange}/>
+                    <label htmlFor="companyName2">
+                        <input type="text" name="companyName2" id="companyName2" onChange={handleExperienceChange}/>
                         Company Name
                     </label>
-                    <label htmlFor="position">
-                        <input type="text" name="position2" id="position" onChange={handleExperienceChange}/>
+                    <label htmlFor="position2">
+                        <input type="text" name="position2" id="position2" onChange={handleExperienceChange}/>
                         Position
                     </label>
-                    <label htmlFor="responsibilities">
-                        <input type="text" name="responsibilities2" id="responsibilities" onChange={handleExperienceChange}/>
+                    <label htmlFor="responsibilities2">
+                        <input type="text" name="responsibilities2" id="responsibilities2" onChange={handleExperienceChange}/>
                         Main Responsibilities
                     </label>
-                    <label htmlFor="dateStart">
-                        <input type="date" name="dateStart2" id="dateStart" onChange={handleExperienceChange}/>
+                    <label htmlFor="dateStart2">
+                        <input type="date" name="dateStart2" id="dateStart2" onChange={handleExperienceChange}/>
                         Started working
                     </label>
-                    <label htmlFor="dateEnd">
-                        <input type="date" name="dateEnd2" id="dateEnd" onChange={handleExperienceChange}/>
+                    <label htmlFor="dateEnd2">
+                        <input type="date" name="dateEnd2" id="dateEnd2" onChange={handleExperienceChange}/>
                         Ended working
                     </label>
                 </form>

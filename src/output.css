@@ -1,0 +1,64 @@
+.output {
+    background: white;
+    margin: 2em;
+    width: 21cm;
+    height: 29.7cm;
+    justify-self: center;
+}
+
+.personal-info-output {
+    display: flex;
+    padding: 2em;
+}
+
+.personal-info-output > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    padding: 2em;
+
+}
+
+.info-light {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.education-output,
+.practical-experience-output {
+    margin: 0 6em 2em 6em;
+}
+
+.school,
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+.school-date,
+.experience-date{
+    font-weight: 600;
+    display: flex;
+}
+
+.school-info,
+.experience-info {
+    color: #2a2a2a;
+    line-height: 1.8em;
+}
+
+.experience-date {
+    /*gap: 1em;*/
+    align-items: center;
+    flex-direction: column;
+}

@@ -43,7 +43,7 @@ input {
     padding: 0.5em;
 }
 
-.profile-picture {
+ .profile-picture-input {
     grid-column: span 2;
     align-content: center;
 }

@@ -43,9 +43,15 @@ input {
     padding: 0.5em;
 }
 
+.profile-picture {
+    grid-column: span 2;
+    align-content: center;
+}
+
 label[for="responsibilities"] {
     grid-column: span 2;
 }
 
-
-
+hr {
+    margin: 1em 0;
+}

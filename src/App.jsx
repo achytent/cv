@@ -23,7 +23,15 @@ export default function App() {
         responsibilities: "Almost all the work",
         dateStart: "2023-08-01",
         dateEnd: "2023-08-05",
+
+        companyName2: "",
+        position2: "",
+        responsibilities2: "",
+        dateStart2: "",
+        dateEnd2: "",
     })
+
+    const [selectedImage, setSelectedImage] = useState(null);
 
     function handlePersonalChange(event) {
         const changingField = event.target.name;
@@ -55,11 +63,14 @@ export default function App() {
                 handleEducationChange={handleEducationChange}
                 practicalExperience={practicalExperience}
                 handlePracticalExperience={handlePracticalExperience}
+
+                setSelectedImage={setSelectedImage}
             />
             <Output
                 personalInfo={personalInfo}
                 education={education}
                 practicalExperience={practicalExperience}
+                selectedImage={selectedImage}
             />
         </>
     )

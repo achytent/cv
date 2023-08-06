@@ -4,6 +4,8 @@ export default function Input(props) {
     const handlePersonalChange = props.handlePersonalChange;
     const handleEducationChange = props.handleEducationChange;
     const handleExperienceChange = props.handlePracticalExperience;
+    const setSelectedImage = props.setSelectedImage;
+
     return (
         <div className="input">
             <div className="personal-info">
@@ -26,6 +28,15 @@ export default function Input(props) {
                         <input type="text" id="phone" name="phone" onChange={handlePersonalChange}/>
                         Phone Number
                     </label>
+                    <input
+                        type="file"
+                        className="profile-picture"
+                        onChange={(event) => {
+                            console.log(event.target.files[0])
+                            setSelectedImage(event.target.files[0])
+                        }}
+                    />
+
                 </form>
             </div>
             <div className="education">
@@ -66,6 +77,29 @@ export default function Input(props) {
                     </label>
                     <label htmlFor="dateEnd">
                         <input type="date" name="dateEnd" id="dateEnd" onChange={handleExperienceChange}/>
+                        Ended working
+                    </label>
+                </form>
+                <hr/>
+                <form>
+                    <label htmlFor="companyName">
+                        <input type="text" name="companyName2" id="companyName" onChange={handleExperienceChange}/>
+                        Company Name
+                    </label>
+                    <label htmlFor="position">
+                        <input type="text" name="position2" id="position" onChange={handleExperienceChange}/>
+                        Position
+                    </label>
+                    <label htmlFor="responsibilities">
+                        <input type="text" name="responsibilities2" id="responsibilities" onChange={handleExperienceChange}/>
+                        Main Responsibilities
+                    </label>
+                    <label htmlFor="dateStart">
+                        <input type="date" name="dateStart2" id="dateStart" onChange={handleExperienceChange}/>
+                        Started working
+                    </label>
+                    <label htmlFor="dateEnd">
+                        <input type="date" name="dateEnd2" id="dateEnd" onChange={handleExperienceChange}/>
                         Ended working
                     </label>
                 </form>

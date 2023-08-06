@@ -1,7 +1,7 @@
 import Input from "./Input.jsx";
 import {useState} from "react";
 import Output from "./Output.jsx";
-import "./app.css";
+import "../styles/app.css";
 
 export default function App() {
     const [personalInfo, setPersonalInfo] = useState({

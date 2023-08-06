@@ -1,4 +1,4 @@
-import "./Input.css"
+import "../styles/Input.css"
 
 export default function Input(props) {
     const handlePersonalChange = props.handlePersonalChange;

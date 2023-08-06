@@ -1,4 +1,4 @@
-import './output.css'
+import '../styles/output.css'
 
 export default function Output(props) {
     const personalInfo = props.personalInfo;

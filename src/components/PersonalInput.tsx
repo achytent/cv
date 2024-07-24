@@ -81,6 +81,15 @@ const PersonalInput = ({ setPersonalInfo }: PersonalInputProps) => {
             onChange={handlePersonalInputChange}
           />
         </label>
+        <label htmlFor="about">
+          About
+          <input
+            type="text"
+            name="about"
+            id="about"
+            onChange={handlePersonalInputChange}
+          />
+        </label>
       </form>
     </div>
   );

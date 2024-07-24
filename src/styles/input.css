@@ -6,6 +6,10 @@
   overflow-y: scroll;
 }
 
+.input {
+  margin-top: 1rem;
+}
+
 .personal .input-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,17 +20,17 @@
   display: flex;
   flex-direction: column;
   margin: 0.25rem;
-  min-width: none;
   position: relative;
   font-size: 0.8rem;
   color: darkslategray;
   font-weight: 400;
 }
 
-.input-form > label > input {
+.input-form > label > input,
+.skillsInput {
   border: 2px solid lightgray;
   padding: 0.4rem;
-  width: 90%;
+  /* width: 90%; */
   margin-top: 0.15rem;
   border-radius: 0.5rem;
 }
@@ -34,19 +38,38 @@
 .input-form > label:has(input[name="image"]),
 .input-form > label:has(input[name="position"]),
 .input-form > label:has(input[name="started"]),
-.input-form > label:has(input[name="ended"]) {
+.input-form > label:has(input[name="ended"]),
+.input-form > label:has(input[name="goals"]),
+.input-form > label:has(input[name="about"]) {
   grid-column: span 2;
-  width: calc(100% + 0.7rem);
 }
 
 .subtitle {
   margin: 0.25rem;
 }
 
-.add-education {
+.add-education,
+.export {
   background-color: white;
   border: 2px solid rgb(110, 110, 238);
   padding: 0.5rem;
   border-radius: 0.5rem;
   color: rgb(110, 110, 238);
+}
+
+.skills-container {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background-color: white;
+  border: 2px solid lightgray;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }

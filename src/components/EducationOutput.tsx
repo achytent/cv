@@ -7,7 +7,7 @@ type EducationOutputProps = {
 const EducationOutput = ({ educationInfo }: EducationOutputProps) => {
   return (
     <div className="education-wrapper">
-      <h2 className="title">Education</h2>
+      {educationInfo && <h2 className="title">Education</h2>}
       {educationInfo?.map((education) => {
         return (
           <div className="output education">

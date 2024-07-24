@@ -17,6 +17,7 @@ const PersonalOutput = ({ personalInfo }: PersonalOutputProps) => {
         </p>
         <p className="subitem">{personalInfo?.email}</p>
         <p className="subitem">{personalInfo?.phone}</p>
+        <p>{personalInfo?.about}</p>
       </div>
     </div>
   );

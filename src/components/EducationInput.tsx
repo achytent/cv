@@ -19,13 +19,13 @@ const EducationInput = ({
     const element = newEducation.find(
       (element) => String(element.id) == target.dataset.id
     );
+    if (!element) return;
     const index = educationInfo.indexOf(element);
     setEducationInfo((prevstate: IEducationInfo[]) => {
       return prevstate.map((item: IEducationInfo) =>
         item.id == index ? { ...item, [target.name]: target.value } : item
       );
     });
-    console.log(educationInfo);
   };
   const handleNewEducation = () => {
     setEducationInfo((prevstate: IEducationInfo[]) =>

@@ -4,7 +4,7 @@ type SkillsOutputProps = {
 
 const SkillsOutput = ({ skills }: SkillsOutputProps) => {
   return (
-    <>
+    <div className="education-wrapper">
       {skills && <h2 className="title">Skills</h2>}
       <div className="output">
         <div className="skills-container">
@@ -13,7 +13,7 @@ const SkillsOutput = ({ skills }: SkillsOutputProps) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

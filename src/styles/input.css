@@ -50,11 +50,13 @@
 
 .add-education,
 .export {
-  background-color: white;
-  border: 2px solid rgb(110, 110, 238);
+  background-color: #107ab0;
+  border: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  color: rgb(110, 110, 238);
+  color: white;
+  margin-top: 0.5rem;
+  margin-left: 0.25rem;
 }
 
 .skills-container {

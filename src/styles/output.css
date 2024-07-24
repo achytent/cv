@@ -1,9 +1,9 @@
 .output-area {
-  height: 90vh;
-  max-height: 90vh;
+  /* height: 90vh; */
+  /* max-height: ; */
   background-color: white;
   margin: 2rem;
-  padding: 1rem;
+  padding: 3rem 5rem;
   overflow-y: scroll;
 }
 
@@ -37,10 +37,11 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: rgb(97, 92, 92);
 }
 
 .education-wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .education.output {
@@ -52,4 +53,14 @@
 
 .education.output:not(:last-child) {
   border-bottom: 1px solid lightgray;
+}
+
+.education.output .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dates {
+  font-weight: 600;
 }

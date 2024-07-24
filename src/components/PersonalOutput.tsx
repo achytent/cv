@@ -8,9 +8,11 @@ const PersonalOutput = ({ personalInfo }: PersonalOutputProps) => {
   console.log(personalInfo?.image);
   return (
     <div className="output personal">
-      <img
-        src={personalInfo?.image && URL.createObjectURL(personalInfo?.image)}
-      />
+      {personalInfo?.image && (
+        <img
+          src={personalInfo?.image && URL.createObjectURL(personalInfo?.image)}
+        />
+      )}
       <div className="info">
         <p>
           {personalInfo?.firstName} {personalInfo?.lastName}

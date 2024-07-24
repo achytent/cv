@@ -21,7 +21,7 @@ const SkillsInput = ({ skills, setSkills }: SkillsInputProps) => {
   };
   return (
     <div className="input personal">
-      <h2 className="subtitle">Skills</h2>
+      {skills && <h2 className="subtitle">Skills</h2>}
       <form onSubmit={handleNewSkill}>
         <input type="text" className="skillsInput" name="skill" />
       </form>

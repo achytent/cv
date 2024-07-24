@@ -5,7 +5,7 @@ type SkillsOutputProps = {
 const SkillsOutput = ({ skills }: SkillsOutputProps) => {
   return (
     <>
-      <h2 className="title">Skills</h2>
+      {skills && <h2 className="title">Skills</h2>}
       <div className="output">
         <div className="skills-container">
           {skills?.map((skill) => (

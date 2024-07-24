@@ -1,0 +1,55 @@
+.output-area {
+  height: 85vh;
+  max-height: 85vh;
+  background-color: white;
+  margin: 2rem;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.personal.output {
+  height: 180px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+.personal.output img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.personal.output .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  gap: 0.25rem;
+}
+
+.subitem {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.education-wrapper {
+  margin-top: 2rem;
+}
+
+.education.output {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.education.output:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}

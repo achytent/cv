@@ -6,7 +6,7 @@ type SkillsInputProps = {
 const SkillsInput = ({ skills, setSkills }: SkillsInputProps) => {
   const handleNewSkill = (event: React.FormEvent) => {
     event.preventDefault();
-    const target = event.target["skill"] as HTMLInputElement;
+    const target = event.target["skill"];
     const value = target.value;
     if (!skills) {
       setSkills(() => [value]);

@@ -4,6 +4,7 @@ import EducationInput from "./EducationInput";
 import { IEducationInfo, IExperienceInfo } from "../types";
 import ExperienceInput from "./ExperienceInput";
 import SkillsInput from "./SkillsInput";
+import html2pdf from "html2pdf.js";
 
 type InputFieldsProps = {
   setPersonalInfo: Function;
@@ -24,6 +25,11 @@ const InputFields = ({
   skills,
   setSkills,
 }: InputFieldsProps) => {
+  function exportToPDF() {
+    const element = document.querySelector(".output-area");
+    html2pdf().from(element).save();
+  }
+
   return (
     <div className="input-area">
       <PersonalInput setPersonalInfo={setPersonalInfo} />
@@ -36,7 +42,7 @@ const InputFields = ({
         setExperienceInfo={setExperienceInfo}
       />
       <SkillsInput skills={skills} setSkills={setSkills} />
-      <button onClick={exportToPDF} class="export">
+      <button onClick={exportToPDF} className="export">
         Export to PDF
       </button>
     </div>
